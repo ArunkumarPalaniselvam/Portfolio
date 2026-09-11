@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Arunkumar P" />
+    <meta
+      name="description"
+      content="Arunkumar P is a full-stack and backend software engineer specializing in Node.js, Express, PostgreSQL, and React 19 — architecting and shipping production platforms end to end, including workbridge.hanbee.in and Pulse."
+    />
+    <meta
+      name="keywords"
+      content="Arunkumar P, full-stack developer, backend developer, Node.js developer, Express.js, PostgreSQL, React developer, software engineer portfolio, Hanbee Technology, WorkBridge"
+    />
+    <meta name="theme-color" content="#fbfbf9" />
+    <title>Arunkumar P — Full-Stack Developer</title>
+
+    <!-- Open Graph / social preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Arunkumar P" />
+    <meta property="og:title" content="Arunkumar P — Full-Stack Developer" />
+    <meta
+      property="og:description"
+      content="Full-stack and backend engineer building production systems with Node.js, Express, PostgreSQL, and React 19 — architected and shipped end to end."
+    />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Arunkumar P — Full-Stack Developer" />
+    <meta
+      name="twitter:description"
+      content="Full-stack and backend engineer building production systems with Node.js, Express, PostgreSQL, and React 19."
+    />
+    <meta name="twitter:image" content="/og-image.jpg" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Arunkumar P",
+        "jobTitle": "Full-Stack / Backend Developer",
+        "description": "Full-stack and backend software engineer specializing in Node.js, Express, PostgreSQL, and React 19.",
+        "url": "https://workbridge.hanbee.in",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Hanbee Technology"
+        },
+        "knowsAbout": ["Node.js", "Express.js", "PostgreSQL", "React", "JavaScript", "Python", "REST APIs"],
+        "sameAs": [
+          "https://github.com/Arunkumar3624",
+          "https://www.linkedin.com/in/arunkumar-panalniselvam-s"
+        ]
+      }
+    </script>
+
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700,500,400&f[]=satoshi@900,700,500,400&f[]=zodiak@variable&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

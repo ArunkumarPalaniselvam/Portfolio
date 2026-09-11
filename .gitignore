@@ -1,0 +1,38 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Env files (never commit secrets)
+.env
+.env.*
+!.env.example
+
+# Raw/original personal photos — never imported by the app, kept local only
+/assets/
+
+# Unlinked personal document (superseded by /resume.html)
+/public/arunkumar-p-resume.pdf
+
+# Local tooling metadata
+.claude/

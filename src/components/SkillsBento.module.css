@@ -1,0 +1,105 @@
+.section {
+  padding: var(--space-2xl) var(--container-pad) var(--space-lg);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.header h2 {
+  font-size: var(--text-h2);
+  letter-spacing: -0.02em;
+}
+
+.coreNote {
+  font-size: var(--text-body);
+  color: var(--text-secondary);
+  max-width: 34ch;
+}
+
+.coreNote strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.list {
+  margin-top: var(--space-2xl);
+  border-top: 1px solid var(--border);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: var(--space-lg);
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--border);
+  align-items: baseline;
+}
+
+.rowLabel {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+  font-family: var(--font-mono);
+  font-size: var(--text-overline);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+
+.rowIndex {
+  color: var(--text-disabled);
+}
+
+.rowItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg) var(--space-xl);
+}
+
+.skillItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--text-body);
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.focusRow {
+  border-bottom: none;
+}
+.focusRow .rowLabel {
+  color: var(--accent-cyan);
+}
+.focusItem {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--text-secondary);
+  padding: 4px 0;
+}
+
+.skillIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.skillItem--plain {
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-family: var(--font-mono);
+  font-size: var(--text-body-sm);
+}
+
+@media (max-width: 720px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+}

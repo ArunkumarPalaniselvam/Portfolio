@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Arunkumar P — Résumé</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700,500,400&f[]=satoshi@700,500,400&display=swap" />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg-primary: oklch(0.97 0.012 78);
+    --bg-surface: oklch(0.995 0.004 78);
+    --bg-elevated: oklch(0.94 0.016 76);
+    --text-primary: oklch(0.2 0.018 220);
+    --text-secondary: oklch(0.43 0.02 210);
+    --text-tertiary: oklch(0.58 0.016 205);
+    --border: oklch(0.28 0.02 80 / 0.16);
+    --accent-violet: oklch(0.33 0.065 210);
+    --accent-cyan: oklch(0.6 0.09 195);
+    --accent-pink: oklch(0.68 0.22 350);
+    --gradient-signature: linear-gradient(135deg, var(--accent-pink), var(--accent-violet), var(--accent-cyan));
+    --font-display: 'Cabinet Grotesk', system-ui, sans-serif;
+    --font-body: 'Satoshi', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 14.5px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 56px 64px 80px;
+  }
+
+  .toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding: 16px 64px;
+    background: oklch(0.97 0.012 78 / 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .btn {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 999px;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    background: var(--bg-surface);
+    color: var(--text-primary);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+  .btn:hover { transform: translateY(-1px); border-color: var(--accent-violet); }
+  .btn--primary {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    border: none;
+  }
+
+  header.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    padding-bottom: 22px;
+    border-bottom: 2px solid var(--text-primary);
+    margin-bottom: 28px;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  .role {
+    margin-top: 8px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: var(--accent-violet);
+    text-transform: uppercase;
+  }
+
+  .contact-block {
+    text-align: right;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+  }
+  .contact-block a { color: inherit; text-decoration: none; }
+
+  section { margin-bottom: 26px; }
+
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+    margin-bottom: 14px;
+  }
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .summary {
+    font-size: 15px;
+    color: var(--text-secondary);
+    max-width: 74ch;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+  }
+  .summary strong { color: var(--text-primary); font-weight: 600; }
+
+  .entry { margin-bottom: 18px; }
+  .entry:last-child { margin-bottom: 0; }
+  .entry ul { text-align: justify; text-justify: inter-word; }
+
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .entry-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+  .entry-meta {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    color: var(--text-tertiary);
+    white-space: nowrap;
+  }
+
+  .entry-place {
+    font-size: 13.5px;
+    color: var(--accent-violet);
+    font-weight: 500;
+    margin-top: 2px;
+  }
+
+  .entry ul {
+    margin-top: 8px;
+    padding-left: 18px;
+    color: var(--text-secondary);
+  }
+  .entry li { margin-bottom: 4px; }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+  }
+  .tag {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    padding: 3px 9px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    row-gap: 10px;
+    column-gap: 16px;
+  }
+  .skills-label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+    padding-top: 2px;
+  }
+  .skills-items { color: var(--text-primary); font-size: 13.5px; }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  footer.sig {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    color: var(--text-tertiary);
+  }
+
+  .accent-bar {
+    height: 3px;
+    width: 56px;
+    border-radius: 999px;
+    background: var(--gradient-signature);
+    margin-bottom: 14px;
+  }
+
+  @media print {
+    .toolbar { display: none; }
+    body { font-size: 12.5px; }
+    .page { padding: 0 8mm; max-width: none; }
+    @page { margin: 12mm 10mm; }
+  }
+
+  @media (max-width: 720px) {
+    .page { padding: 32px 20px 60px; }
+    .toolbar { padding: 12px 20px; }
+    header.head { flex-direction: column; align-items: flex-start; }
+    .contact-block { text-align: left; }
+    .two-col { grid-template-columns: 1fr; }
+    .skills-grid { grid-template-columns: 1fr; row-gap: 4px; }
+    .skills-label { padding-top: 6px; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="toolbar no-print">
+    <button class="btn" onclick="window.print()">Save / Print as PDF</button>
+    <a class="btn" href="/">Back to site</a>
+  </div>
+
+  <main class="page">
+    <header class="head">
+      <div>
+        <h1>Arunkumar P</h1>
+        <div class="role">Full-Stack / Backend Developer</div>
+      </div>
+      <div class="contact-block">
+        <div id="portfolio-link"></div>
+        <div><a href="mailto:arunkumar.palaniselvam.s@gmail.com">arunkumar.palaniselvam.s@gmail.com</a></div>
+        <div>+91 93428 04230</div>
+        <div><a href="https://www.linkedin.com/in/arunkumar-panalniselvam-s" target="_blank">linkedin.com/in/arunkumar-panalniselvam-s</a></div>
+        <div><a href="https://github.com/Arunkumar3624" target="_blank">github.com/Arunkumar3624</a></div>
+      </div>
+    </header>
+
+    <section>
+      <p class="summary">
+        A full-stack and backend engineer who takes a system from a blank page to production
+        without a team to lean on — <strong>Node.js / Express APIs, thoughtful PostgreSQL
+        schema design, OAuth-based authentication, and a React 19 front end</strong> built
+        with the same care as the backend behind it. I move fast without cutting corners, and
+        I'm now looking to bring that same production-grade speed and ownership to a larger
+        engineering team where the problems get bigger and the stakes get higher.
+      </p>
+    </section>
+
+    <section>
+      <div class="section-title">Experience</div>
+      <div class="entry">
+        <div class="entry-head">
+          <div class="entry-title">Software Engineer</div>
+          <div class="entry-meta">Jun 2026 — Present</div>
+        </div>
+        <div class="entry-place">Hanbee Technology</div>
+        <ul>
+          <li>Solo-architected and shipped <strong>WorkBridge</strong> (workbridge.hanbee.in) to production, starting from nothing more than a problem statement — no existing team, codebase, or blueprint to build from.</li>
+          <li>Designed the PostgreSQL schema from first principles, built REST APIs in Node.js/Express, and implemented OAuth-based authentication with email flows that hold up in the real world.</li>
+          <li>Crafted the React 19 + Tailwind CSS + Framer Motion front end end to end, so the interface feels as considered as the system running underneath it.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Selected Projects</div>
+      <div class="entry">
+        <div class="entry-head">
+          <div class="entry-title">Pulse — Enterprise Workforce Management Platform</div>
+          <div class="entry-meta">Self-initiated</div>
+        </div>
+        <ul>
+          <li>One scalable architecture designed to serve corporate teams, schools, and training institutes alike, from a single codebase rather than a fork per vertical.</li>
+          <li>Real-time attendance tracking, multi-tier leave/shift approval workflows, and role-based access control with compliance credential tracking built in from day one.</li>
+          <li>Data brought to life with TanStack Table and Recharts, so the numbers tell a story at a glance.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">React 19</span><span class="tag">Tailwind CSS</span>
+          <span class="tag">Framer Motion</span><span class="tag">TanStack Table</span><span class="tag">Recharts</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Skills</div>
+      <div class="skills-grid">
+        <div class="skills-label">Languages</div>
+        <div class="skills-items">JavaScript, Python, Java, SQL</div>
+        <div class="skills-label">Backend & APIs</div>
+        <div class="skills-items">Node.js, Express.js, Django, Django REST Framework, RESTful APIs, JWT Auth, RBAC</div>
+        <div class="skills-label">Databases</div>
+        <div class="skills-items">PostgreSQL, MongoDB</div>
+        <div class="skills-label">Frontend</div>
+        <div class="skills-items">React 19, Tailwind CSS, Framer Motion, HTML</div>
+        <div class="skills-label">Tools</div>
+        <div class="skills-items">Git, Postman, VS Code, MySQL Workbench</div>
+      </div>
+    </section>
+
+    <div class="two-col">
+      <section>
+        <div class="section-title">Education</div>
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">B.E. Electrical &amp; Electronics Engineering</div>
+            <div class="entry-meta">2021 — 2025</div>
+          </div>
+          <div class="entry-place">Anand Institute of Higher Technology, Chennai</div>
+          <div style="margin-top:4px; color:var(--text-secondary); font-size:13px;">CGPA 8.1</div>
+        </div>
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">HSC</div>
+            <div class="entry-meta">2021</div>
+          </div>
+          <div class="entry-place">Nadar Hr Sec School, Rajapalayam</div>
+          <div style="margin-top:4px; color:var(--text-secondary); font-size:13px;">77.54%</div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-title">Certification</div>
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">Full-Stack Development</div>
+            <div class="entry-meta">6 Months</div>
+          </div>
+          <div class="entry-place">Besant Technologies, Thoraipakkam, Chennai</div>
+          <div style="margin-top:4px; color:var(--text-secondary); font-size:13px;">
+            Python, Django, REST APIs, SQL, MongoDB, React.
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="sig">
+      <span>Open to relocation</span>
+      <span id="portfolio-link-footer"></span>
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      var url = window.location.origin + '/';
+      var label = window.location.host + '/';
+      var top = document.getElementById('portfolio-link');
+      var bottom = document.getElementById('portfolio-link-footer');
+      if (top) top.innerHTML = '<a href="' + url + '" target="_blank" style="font-weight:600;color:var(--accent-violet);">' + label + '</a>';
+      if (bottom) bottom.innerHTML = '<a href="' + url + '" target="_blank">' + label + '</a>';
+    })();
+  </script>
+</body>
+</html>

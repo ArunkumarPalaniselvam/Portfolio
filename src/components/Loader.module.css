@@ -1,0 +1,56 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+  background: var(--bg-primary);
+  padding: var(--space-lg);
+}
+
+.nameRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35em;
+}
+
+.word {
+  display: flex;
+  overflow: hidden;
+}
+
+.letter {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 5vw, 3.25rem);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.role {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1rem, 2.5vw, 1.375rem);
+  color: var(--text-secondary);
+}
+
+.track {
+  width: min(220px, 55vw);
+  height: 2px;
+  background: var(--border-strong);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  width: 100%;
+  background: var(--gradient-signature);
+  transform-origin: left;
+}
