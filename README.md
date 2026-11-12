@@ -2,7 +2,7 @@
 
 Personal portfolio site for **Arunkumar P**, a full-stack / backend developer — built with React 19, Vite, TypeScript, and Framer Motion.
 
-**Live:** [workbridge.hanbee.in](https://workbridge.hanbee.in) &nbsp;·&nbsp; **GitHub:** [Arunkumar3624](https://github.com/Arunkumar3624)
+**Live:** [arunkumarpalaniselvam.runs-on.dev](https://arunkumarpalaniselvam.runs-on.dev) &nbsp;·&nbsp; **GitHub:** [Arunkumar3624](https://github.com/Arunkumar3624)
 
 ## Highlights
 
