@@ -56,7 +56,7 @@ export function Contact() {
       </div>
 
       <div className={styles.footer}>
-        <span>© {new Date().getFullYear()} Arunkumar P</span>
+        <span>© {new Date().getFullYear()} Arunkumar Palaniselvam</span>
         <span>Built with React, Framer Motion &amp; too much coffee</span>
       </div>
     </section>

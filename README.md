@@ -1,6 +1,6 @@
-# Arunkumar P — Portfolio
+# Arunkumar Palaniselvam — Portfolio
 
-Personal portfolio site for **Arunkumar P**, a full-stack / backend developer — built with React 19, Vite, TypeScript, and Framer Motion.
+Personal portfolio site for **Arunkumar Palaniselvam (Arunkumar P)**, a full-stack / backend developer — built with React 19, Vite, TypeScript, and Framer Motion.
 
 **Live:** [arunkumarpalaniselvam.runs-on.dev](https://arunkumarpalaniselvam.runs-on.dev) &nbsp;·&nbsp; **GitHub:** [Arunkumar3624](https://github.com/Arunkumar3624)
 

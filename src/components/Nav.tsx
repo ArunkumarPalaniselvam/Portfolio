@@ -59,7 +59,7 @@ export function Nav() {
     >
       <a href="#top" className={styles.mark} data-cursor-hover onClick={(e) => handleNavClick(e, '#top')}>
         <span className={styles.avatar}>
-          <img src={navAvatar} alt="Arunkumar P" />
+          <img src={navAvatar} alt="Arunkumar Palaniselvam" />
         </span>
         Arunkumar
       </a>

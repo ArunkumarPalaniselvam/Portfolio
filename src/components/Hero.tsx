@@ -52,9 +52,10 @@ export function Hero({ ready }: HeroProps) {
           animate={start ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.55, ease: [0.16, 1, 0.3, 1] }}
         >
+          I&rsquo;m <strong>Arunkumar Palaniselvam</strong>, a Software Engineer at Hanbee Technology.
           I design, architect, and ship production-grade systems end to end — Node.js and Express
-          APIs, PostgreSQL schemas, and React 19 front ends built with the same care — most
-          recently as the sole engineer behind <strong>workbridge.hanbee.in</strong>.
+          APIs, PostgreSQL schemas, and React 19 front ends built with the same care — most recently
+          as the sole engineer behind <strong>workbridge.hanbee.in</strong>.
         </motion.p>
 
         <motion.div
@@ -88,7 +89,7 @@ export function Hero({ ready }: HeroProps) {
           <RevealMask
             baseSrc={heroGlow}
             revealSrc={cursorPeek}
-            alt="Arunkumar P"
+            alt="Arunkumar Palaniselvam"
             className={styles.frameImg}
           />
           <div className={styles.frameBorder} aria-hidden="true" />

@@ -13,7 +13,7 @@ export function About() {
           <RevealMask
             baseSrc={aboutPortrait}
             revealSrc={cursorPeek}
-            alt="Arunkumar P portrait"
+            alt="Arunkumar Palaniselvam portrait"
             className={styles.portraitImg}
           />
           <span className={styles.portraitTag}>
